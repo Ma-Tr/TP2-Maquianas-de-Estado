@@ -2,8 +2,7 @@
 
 El sistema tiene como objetivo regular automáticamente el nivel de agua en un tanque, manteniéndolo dentro de un Delta deseado mediante el uso de un sensor ultrasónico y un conjunto de accionadores que controlan la entrada y salida de agua.
 
-![diagrama de flujo:](https://github.com/Ma-Tr/TP2-Maquianas-de-Estado/blob/main/RECURSOS/Diagrama%20de%20Estados.png)](https://github.com/Ma-Tr/TP2-Maquianas-de-Estado/blob/main/RECURSOS/Diagrama%20de%20Estado%20(ver2).png)
-
+![./RECURSOS/Diagrama de Estado (ver2).png](https://github.com/Ma-Tr/TP2-Maquianas-de-Estado/blob/main/RECURSOS/Diagrama%20de%20Estado%20(ver2).png)
 
 ## ESPERA – Inicio del sistema. 
 Este es el estado inicial en el que ingresa el sistema al ser encendido.
