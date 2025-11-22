@@ -1,4 +1,4 @@
-Control de llenado de tanque de agua
+# Máquinas de Estado
 
 El sistema tiene como objetivo regular automáticamente el nivel de agua en un tanque, manteniéndolo dentro de un Delta deseado mediante el uso de un sensor ultrasónico y un conjunto de accionadores que controlan la entrada y salida de agua.
 
