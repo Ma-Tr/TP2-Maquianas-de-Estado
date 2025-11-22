@@ -2,7 +2,7 @@
 
 El sistema tiene como objetivo regular automáticamente el nivel de agua en un tanque, manteniéndolo dentro de un Delta deseado mediante el uso de un sensor ultrasónico y un conjunto de accionadores que controlan la entrada y salida de agua.
 
-[diagrama de flujo:](https://github.com/Ma-Tr/TP2-Maquianas-de-Estado/blob/main/RECURSOS/Diagrama%20de%20Estados.png)
+![diagrama de flujo:](https://github.com/Ma-Tr/TP2-Maquianas-de-Estado/blob/main/RECURSOS/Diagrama%20de%20Estados.png)
 
 
 ## ESPERA – Inicio del sistema. 
