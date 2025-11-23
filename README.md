@@ -31,3 +31,4 @@ En esta carpeta coloque una etapa temprana del codigo, tenia configurada salidas
 # CARPETA PROYECTO v1.1
 
 En esta carpeta se encuentra la ultima version del codigo, ya cuenta con funciones dedicadas a cada estado de la maquina de estados. tiene su libreria MYLIB.h.
+![./RECURSOS/Proyecto en proteus.png](https://github.com/Ma-Tr/TP2-Maquianas-de-Estado/blob/main/RECURSOS/Proyecto%20en%20proteus.png)
