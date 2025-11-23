@@ -26,9 +26,16 @@ Una vez que el nivel retorna al rango deseado, el sistema vuelve al Estado 1.
 
 # CARPETA PROYECTO
 
-En esta carpeta coloque una etapa temprana del codigo, tenia configurada salidas y entradas con nombres genericos para poder chequear el progreso del codigo. Esta version del codigo es funciona, no cuenta con Funciones dedicadas a cada Estado.
+En esta carpeta se encuentra una versión temprana del código.
+En esta etapa inicial se utilizaron entradas y salidas con nombres genéricos (Entradas: E1, E2, E3; Salidas: S1, S2, S3), únicamente para verificar el funcionamiento básico y el progreso del desarrollo.
+
+Esta versión del programa es funcional, pero no cuenta con funciones separadas por estado dentro de la máquina de estados.
 
 # CARPETA PROYECTO v1.1
 
-En esta carpeta se encuentra la ultima version del codigo, ya cuenta con funciones dedicadas a cada estado de la maquina de estados. tiene su libreria MYLIB.h.
+Esta carpeta contiene la versión más reciente del código.
+Incluye la implementación completa de funciones dedicadas para cada estado de la máquina de estados, lo que mejora la organización y la mantenibilidad del proyecto.
+
+Además, incorpora la librería personalizada MYLIB.h, donde se centralizan los prototipos y definiciones del sistema.
+
 ![./RECURSOS/Proyecto en proteus.png](https://github.com/Ma-Tr/TP2-Maquianas-de-Estado/blob/main/RECURSOS/Proyecto%20en%20proteus.png)
