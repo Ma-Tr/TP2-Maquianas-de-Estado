@@ -18,7 +18,7 @@ Cuando el sensor indica que el nivel de agua está por debajo del límite inferi
 Aquí se activan las compuertas de llenado, permitiendo la entrada de agua al tanque.
 El estado se mantiene hasta que el nivel vuelva a entrar dentro del rango deseado, momento en el que el sistema regresa al Estado 1.
 
-##VACIADO – Nivel por encima del margen superior (Estado 3).
+## VACIADO – Nivel por encima del margen superior (Estado 3).
 Si el nivel de agua supera el límite superior preestablecido, el sistema ingresa a este estado.
 En este estado se habilitan las compuertas de vaciado, permitiendo la salida de agua para reducir el nivel.
 Una vez que el nivel retorna al rango deseado, el sistema vuelve al Estado 1.
