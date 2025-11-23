@@ -22,3 +22,12 @@ El estado se mantiene hasta que el nivel vuelva a entrar dentro del rango desead
 Si el nivel de agua supera el límite superior preestablecido, el sistema ingresa a este estado.
 En este estado se habilitan las compuertas de vaciado, permitiendo la salida de agua para reducir el nivel.
 Una vez que el nivel retorna al rango deseado, el sistema vuelve al Estado 1.
+
+
+# CARPETA PROYECTO
+
+En esta carpeta coloque una etapa temprana del codigo, tenia configurada salidas y entradas con nombres genericos para poder chequear el progreso del codigo. Esta version del codigo es funciona, no cuenta con Funciones dedicadas a cada Estado.
+
+# CARPETA PROYECTO v1.1
+
+En esta carpeta se encuentra la ultima version del codigo, ya cuenta con funciones dedicadas a cada estado de la maquina de estados. tiene su libreria MYLIB.h.
