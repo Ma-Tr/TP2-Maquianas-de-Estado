@@ -31,7 +31,7 @@ long medir_distancia_cm(void)
         tiempo++;
 
         if (tiempo > TIMEOUT_US) {
-            return 0;  // eco demasiado largo o error
+            return 0;  // eco demasiado largo
         }
     }
 

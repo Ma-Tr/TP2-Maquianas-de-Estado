@@ -13,7 +13,7 @@ void init_mcu(void)
     // ----- SALIDAS -----
     Salidas.modo  = avr_GPIO_mode_Output;
     Salidas.port  = S_PORT;
-    Salidas.pines = S1_MASK | S2_MASK | S3_MASK;
+    Salidas.pines = Llenado_MASK | Vaciado_MASK | S3_MASK;
     init_gpio(Salidas);
 
 

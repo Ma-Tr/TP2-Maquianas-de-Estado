@@ -1,76 +1,33 @@
 #include "config.h"
+int main(void)
+{
+   init_mcu();
 
+   Nivel_t nivel = { 
+       .N = 0,
+       .Set_N = 28,
+       .Delta_N = 10
+   };
 
+   Estados_t Estado = Espera; //seteo el estado inicial
 
+    while(1)
+    {
+        switch(Estado)
+        {
+            case Espera:
+                Estado = f_Espera(nivel);
+                break;
 
+            case Llenar:
+                Estado = f_Llenar(nivel);
+                break;
 
-int main(void) {
+            case Vaciar:
+                Estado = f_Vaciar(nivel);
+                break;
+        }
+	
 
-init_mcu();
-
-while(1){
-
-
-
-switch(Estado){
-
-   case 1:// Espera
-      S1=0; //llenar
-      S2=0;// vaciar
-      
-      Nivel= medir_distancia_cm();
-      
-      if(Nivel> Set_N + Delta_N){
-	 Estado = 2;
-	 }
-      else if(Nivel< Set_N - Delta_N){
-	 Estado = 3;
-	 }
-      else {
-	 Estado =1;
-	 }
-	 
-      break;
-   
-   case 2: //llenar
-      S1=1;//llenar
-      S2=0;// vaciar
-      
-      Nivel= medir_distancia_cm();
-      
-      if(Nivel > Set_N+Delta_N){
-      Estado = 2;
-      }
-   else if(Nivel< Set_N){
-      Estado = 1;
-      }
-   else { 
-      Estado =2;
-      }
-   break;
-   
-   case 3:// vaciar
-   
-      S1=0;//llenar
-      S2=1;// vaciar
-      
-      Nivel= medir_distancia_cm();
-      
-      if(Nivel < Set_N-Delta_N){
-      Estado = 3;
-      }
-   else if(Nivel> Set_N){
-      Estado = 1;
-      }
-   else { 
-      Estado =3;
-      }
-   break;
-   
-   
-}
-}
-
-
-return 0;
+    }
 }
