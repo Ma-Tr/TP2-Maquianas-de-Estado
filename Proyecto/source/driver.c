@@ -1,5 +1,35 @@
 #include "config.h"
 
+void init_mcu(void)
+{
+    GpioInitStructure_AVR ENTRADAS, SALIDAS, ULTRASONICO;
+
+    // ----- ENTRADAS -----
+    ENTRADAS.modo  = avr_GPIO_mode_Input;
+    ENTRADAS.port  = E_PORT;
+    ENTRADAS.pines = E1_MASK | E2_MASK | E3_MASK;
+    init_gpio(ENTRADAS);
+
+    // ----- SALIDAS -----
+    SALIDAS.modo  = avr_GPIO_mode_Output;
+    SALIDAS.port  = S_PORT;
+    SALIDAS.pines = LLENADO_MASK | VACIADO_MASK | S3_MASK;
+    init_gpio(SALIDAS);
+
+
+    // --- TRIGGER como salida ---
+    ULTRASONICO.port  = TRIG_PORT;
+    ULTRASONICO.modo  = avr_GPIO_mode_Output;
+    ULTRASONICO.pines = TRIG_MASK;
+    init_gpio(ULTRASONICO);
+
+    // --- ECHO como entrada ---
+    ULTRASONICO.port  = ECHO_PORT;
+    ULTRASONICO.modo  = avr_GPIO_mode_Input;
+    ULTRASONICO.pines = ECHO_MASK;
+    init_gpio(ULTRASONICO);
+    
+   }
 int contador;
 
 long medir_distancia_cm(void)

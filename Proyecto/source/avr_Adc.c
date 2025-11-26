@@ -45,13 +45,13 @@ avr_ADC_Value_t leer_ADC(ADC_CANAL_t canal) {
 	avr_ADC_comienzo_conversion();			// Empieza la conversion
 	if (avr_resolucion_ADC == avr_ADC_RES_10Bit) {
 		while (!(ADCSRA & (1 << ADIF)))
-			;	//Espera hasta que la conversion este terminada
+			;	//ESPERA hasta que la conversion este terminada
 		valor = avr_ADC_RETURN_10BIT_RES;
 
 	}
 	if (avr_resolucion_ADC == avr_ADC_RES_8Bit) {
 		while (!(ADCSRA & (1 << ADIF)))
-			;	//Espera hasta que la conversion este terminada
+			;	//ESPERA hasta que la conversion este terminada
 		valor = avr_ADC_RETURN_8BIT_RES;	//Devuelve el valor convertido
 	}
 	return valor;	//Devuelve el valor convertido

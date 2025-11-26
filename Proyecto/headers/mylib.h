@@ -11,9 +11,9 @@
 //VARIABLES//
 
 typedef enum {
-    Espera = 0,
-    Llenar = 1,
-    Vaciar = 2
+    ESPERA = 0,
+    LLENAR = 1,
+    VACIAR = 2
 } Estados_t;
 
 
@@ -22,7 +22,7 @@ typedef struct {
    char N;
    char Set_N;
    char Delta_N;
-} Nivel_t;
+} nivel_t;
 
 // FUNCIONES//
 void init_mcu(void);
@@ -31,9 +31,9 @@ long medir_distancia_cm(void);
 void interrupcionExternas(void);
 
 //FUNCIONES ESTADOS//
-Estados_t f_Espera(Nivel_t nivel);
-Estados_t f_Llenar(Nivel_t nivel);
-Estados_t f_Vaciar(Nivel_t nivel);
+Estados_t f_Espera(nivel_t nivel);
+Estados_t f_Llenar(nivel_t nivel);
+Estados_t f_Vaciar(nivel_t nivel);
 
 
 #endif

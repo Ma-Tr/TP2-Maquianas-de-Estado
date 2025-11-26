@@ -25,11 +25,11 @@
 
 #define S_PORT avr_GPIO_B
 
-#define Llenado        avr_GPIOB_OUT_0
-#define Llenado_MASK   avr_GPIO_PIN_0
+#define LLENADO        avr_GPIOB_OUT_0
+#define LLENADO_MASK   avr_GPIO_PIN_0
 
-#define Vaciado        avr_GPIOB_OUT_1
-#define Vaciado_MASK   avr_GPIO_PIN_1
+#define VACIADO        avr_GPIOB_OUT_1
+#define VACIADO_MASK   avr_GPIO_PIN_1
 
 #define S3        avr_GPIOB_OUT_2
 #define S3_MASK   avr_GPIO_PIN_2

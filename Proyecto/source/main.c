@@ -3,28 +3,28 @@ int main(void)
 {
    init_mcu();
 
-   Nivel_t nivel = { 
+   nivel_t nivel = { 
        .N = 0,
        .Set_N = 28,
        .Delta_N = 10
    };
 
-   Estados_t Estado = Espera; //seteo el estado inicial
+   Estados_t estado = ESPERA; //seteo el estado inicial
 
     while(1)
     {
-        switch(Estado)
+        switch(estado)
         {
-            case Espera:
-                Estado = f_Espera(nivel);
+            case ESPERA:
+                estado = f_Espera(nivel);
                 break;
 
-            case Llenar:
-                Estado = f_Llenar(nivel);
+            case LLENAR:
+                estado = f_Llenar(nivel);
                 break;
 
-            case Vaciar:
-                Estado = f_Vaciar(nivel);
+            case VACIAR:
+                estado = f_Vaciar(nivel);
                 break;
         }
 	
