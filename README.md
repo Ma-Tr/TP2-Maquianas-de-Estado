@@ -39,3 +39,6 @@ Incluye la implementación completa de funciones dedicadas para cada estado de l
 Además, incorpora la librería personalizada MYLIB.h, donde se centralizan los prototipos y definiciones del sistema.
 
 ![./RECURSOS/Proyecto en proteus.png](https://github.com/Ma-Tr/TP2-Maquianas-de-Estado/blob/main/RECURSOS/Proyecto%20en%20proteus.png)
+
+Video
+https://youtu.be/WEZQznAKn1w
